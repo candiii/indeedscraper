@@ -1,6 +1,4 @@
-
-
-dependencies:
+Dependencies:
 
 
 `python`
