@@ -1,8 +1,14 @@
 
 
 dependencies:
+
+
 `python`
+
+
 `pip install scrapy`
+
+
 `pip install scrapy-splash`
 
 
