@@ -7,7 +7,7 @@ class JobSpider(scrapy.Spider):
     start_urls = ['https://www.indeed.com/jobs?q=software']
 
     def start_requests(self):
-        api_key = 'd1d4e79af0c01885502e6c59ed00ec36'
+        api_key = 'YOUR  API KEY HERE'
         target_url = 'https://www.indeed.com/jobs?q=software'
         scraper_api_url = f'http://api.scraperapi.com/?api_key={api_key}&url={target_url}'
 
