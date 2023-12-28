@@ -31,4 +31,4 @@ Once you have updated the code run the following command in the same directory :
 `scrapy runspider job_spider.py`
 
 
-It will save the scraped jobs in inside the json file in the spiders directory.
+It will save the scraped jobs inside the json file in the spiders directory.
