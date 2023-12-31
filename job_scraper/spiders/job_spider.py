@@ -11,7 +11,7 @@ class JobSpider(scrapy.Spider):
         target_url = 'https://www.indeed.com/jobs?q=software'
         scraper_api_url = f'http://api.scraperapi.com/?api_key={api_key}&url={target_url}'
 
-        # Adjust range to scrape more pages, e.g., range(0, 100, 10) for 10 pages
+        # adjust range to scrape more pages
         for start in range(0, 50, 10):
             page_url = f'{scraper_api_url}&start={start}'
             yield SplashRequest(url=page_url, callback=self.parse, args={'wait': 2})
@@ -35,7 +35,7 @@ class JobSpider(scrapy.Spider):
                     'company': company.strip() if company else None,
                     'salary': salary.strip() if salary else None,
                     'job_link': job_link_absolute,
-                    'url': job_link_absolute  # Adding a 'url' field with the same link as 'job_link'
+                    'url': job_link_absolute  
                 }
 
                 job_data_list.append(job_data)
